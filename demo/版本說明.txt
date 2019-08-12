@@ -1,0 +1,12 @@
+*** Frameworks
+jQuery 2.2.4
+jQuery-Mobile 1.4.5
+Bootstrap 3.3.7
+Fontawesome 5.4.1
+
+*** Plugins
+Easing 1.4.1
+Lazy 1.7.9
+MobileDetect 1.4.2
+MagnificPopup 1.1.0
+Slick 1.9.0

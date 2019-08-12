@@ -1,0 +1,24 @@
+.product-table-theme { }
+/* 2-3欄表格樣板 */
+.product-table-theme .table-style { border: 0; width: 100%; border-spacing: 0px; border-top: 4px solid #000; border-bottom: 2px solid #000; font-family: "Roboto", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif; font-weight: normal; color: #666; }
+.product-table-theme .table-style th,
+.product-table-theme .table-style td { border: 0; vertical-align: middle; padding: 15px 20px; font-size: 1.125rem;}
+.product-table-theme .table-style th { padding: 20px 20px; border-bottom: 2px solid #000; color: #222 }
+.product-table-theme .table-style td[colspan],
+.product-table-theme .table-style th[colspan] { text-align: center }
+.product-table-theme .table-style td:nth-child(1) { font-weight: bold; max-width: 50%; color: #222 }
+.product-table-theme .table-style tr:nth-child(odd) td { background: #fff; }
+.product-table-theme .table-style tr:nth-child(even) td { background: #eee; }
+
+@media (max-width:991px) {
+	.product-table-theme .table-style th,
+	.product-table-theme .table-style td { padding: 10px 15px; font-size:1rem; }
+	.product-table-theme .table-style td {  }
+	.product-table-theme .table-style th:first-child,
+	.product-table-theme .table-style td:first-child { max-width: 50%; min-width: 100px; }
+}
+
+@media (max-width:565px) {
+	.product-table-theme .table-style th,
+	.product-table-theme .table-style td { padding: 8px; font-size: 0.875rem;}
+}

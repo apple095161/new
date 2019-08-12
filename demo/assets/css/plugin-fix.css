@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/*
+ * CSS Document
+ * ==========================================================================
+ * 版權所有 2016 鉅潞科技網頁設計公司，並保留所有權利。
+ * 網站地址: http://www.grnet.com.tw
+ * ==========================================================================
+ * $Author: Rain $
+ * $Date: 2019-07-16 Mon. $
+ * **請注意: 本樣式檔處理使用套件的客製樣式，避免因套件程式延遲載入造成樣式跑版。
+*/
+
+/*dots*/
+.slick-dots { margin: 0; padding: 0; z-index: 2; font-size: 0; text-align: center; }
+.slick-dots li { display: inline-block; height: 31px; border-radius: 100%; border-radius: 100%; padding: 11px; }
+.slick-dots li button { border: 1px solid #fff; width: 10px; height: 10px; padding: 0; background: transparent; position: relative; background: transparent; border: 1px solid #fff; transition: all .3s ease; -o-transition: all .3s ease; -moz-transition: all .3s ease; -webkit-transition: all .3s ease; display: block; line-height: 10px; margin: 0; border-radius: 10px; }
+.slick-dots li.slick-active button { background: #fff; }
+@media (max-width:991px) {
+	.slick-dots { bottom: 20px; width: 100%; }
+}
+
+/* 頁碼&左右箭頭共用 */
+.slick-arrow { display: block; position: absolute; outline: none; text-indent: -9999px; cursor: pointer; padding: 0; background: #e8c226; width: 48px; height: 48px; border-radius: 30px; -moz-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1); -o-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1); -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1); transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1); border: 0; background-size: contain; top: 50%; margin-top: -24px; z-index: 1 }
+.slick-arrow:before { content: ""; position: absolute; display: block; width: 10px; height: 10px; top: 21px; -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.3, 0.5); transition: all 0.5s cubic-bezier(0.5, 0, 0.3, 0.5); border-width: 0 0 1px 1px; border-style: solid; transform: rotate(45deg); border-color: #fff; -o-transition: all 0.5s cubic-bezier(0.5, 0, 0.3, 0.5); border-color: transparent transparent #fff #fff; top: 17px; left: 19px; border-width: 1px; width: 15px; height: 15px; }
+.slick-arrow.slick-next:before { transform: rotate(225deg); left: 15px; }
+.slick-arrow.slick-prev { left: 0; }
+.slick-arrow.slick-next { right: 0; }
+.slick-arrow svg { display: block; width: 100%; }
+.slick-arrow svg> g> path { -moz-transition: stroke 0.5s cubic-bezier(0.7, 0, 0.3, 1); -o-transition: stroke 0.5s cubic-bezier(0.7, 0, 0.3, 1); -webkit-transition: stroke 0.5s cubic-bezier(0.7, 0, 0.3, 1); transition: stroke 0.5s cubic-bezier(0.7, 0, 0.3, 1); }
+.slick-arrow svg> path { -moz-transition: fill 0.5s cubic-bezier(0.7, 0, 0.3, 1); -o-transition: fill 0.5s cubic-bezier(0.7, 0, 0.3, 1); -webkit-transition: fill 0.5s cubic-bezier(0.7, 0, 0.3, 1); transition: fill 0.5s cubic-bezier(0.7, 0, 0.3, 1); }
+@media (min-width:992px) {
+	.slick-arrow:hover svg> g> path { stroke: #f3c064; fill: rgba(255, 255, 255, 0.1); }
+	.slick-arrow:hover svg> path { fill: #f3c064; }
+}
+@media (max-width:767px) {
+	.slick-arrow.slick-prev { left: 4%; bottom: 50%; margin-bottom: -22px }
+	.slick-arrow.slick-next { left: auto; right: 4%; bottom: 50%; margin-bottom: -22px }
+}
+
+/* .i-banner */
+.i-banner .slick-dots { position: absolute; left: 4%; top: 50%; transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); -webkit-transform: translateY(-50%); }
+.i-banner .slick-dots li { display: block; }
+.i-banner .slick-arrow { background: transparent; left: 4%; margin-left: -10px; top: auto; bottom: 60px; }
+.i-banner .slick-arrow:before { display: none; }
+.i-banner .slick-arrow.slick-prev { bottom: 130px; }
+@media (max-width:767px) {
+	.i-banner .slick-dots{ top: auto; bottom: 0; left: 0; text-align: center }
+	.i-banner .slick-dots li { display: inline-block; }
+	.i-banner .slick-arrow { display: none !important; }
+}
+
+/* .i-mission */
+.i-mission .slick-arrow { height: 68px; width: 30px; background: transparent; top: auto; }
+.i-mission .slick-arrow.slick-prev { left: auto; bottom: 0; right: 114px; }
+.i-mission .slick-arrow.slick-prev:before { content: ""; position: absolute; display: block; width: 10px; height: 10px; top: 21px; -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.3, 0.5); transition: all 0.5s cubic-bezier(0.5, 0, 0.3, 0.5); border-width: 0 0 1px 1px; border-style: solid; transform: rotate(45deg); border-color: #fff; -o-transition: all 0.5s cubic-bezier(0.5, 0, 0.3, 0.5); border-color: transparent transparent #d6a730 #d6a730; top: 27px; left: 15px; border-width: 1px; width: 15px; height: 15px; }
+.i-mission .slick-arrow.slick-next { left: auto; right: 0; bottom: 0; }
+.i-mission .slick-arrow.slick-next:before { content: ""; position: absolute; display: block; width: 10px; height: 10px; top: 21px; -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.3, 0.5); transition: all 0.5s cubic-bezier(0.5, 0, 0.3, 0.5); border-width: 0 0 1px 1px; border-style: solid; transform: rotate(225deg); border-color: #fff; -o-transition: all 0.5s cubic-bezier(0.5, 0, 0.3, 0.5); border-color: transparent transparent #d6a730 #d6a730; top: 27px; left: 0; border-width: 1px; width: 15px; height: 15px; }
+@media (max-width:767px) {
+	.i-mission .slick-arrow { height: 30px; }
+	.i-mission .slick-arrow.slick-prev,
+	.i-mission .slick-arrow.slick-next { margin-bottom: 15px }
+	.i-mission .slick-arrow.slick-prev:before,
+	.i-mission .slick-arrow.slick-next:before { top: 5px; }
+}
+@media (max-width: 565px) {
+.i-mission .slick-arrow.slick-prev,
+	.i-mission .slick-arrow.slick-next { margin-bottom: 0px }
+}
+
+/* .i-partner */
+@media (max-width:991px) {
+	.i-partner .partner-slick .slick-dots { bottom: -50px; }
+	.i-partner .partner-slick .slick-dots li button { border: 1px solid #ca8918; }
+	.i-partner .partner-slick .slick-dots li.slick-active button { background: #ca8918; }
+}
+
+
+/* history */
+.history .slider .slick-arrow { background: transparent; background-size: 100%; border-radius: 0; height: 60px; background-position: center center; background-repeat: no-repeat }
+.history .slider .slick-arrow:before { display: none; }
+.history .slider .slick-arrow.slick-prev { background-image: url('../images/left.svg'); }
+.history .slider .slick-arrow.slick-next { background-image: url('../images/right.svg'); }
+.history .slick-dots { bottom: -30px; }
+.history .slick-dots li button { border: 1px solid #56401c; }
+.history .slick-dots li.slick-active button { background: #56401c }
+
+@media (max-width:767px) {
+
+#product-view .pic-slider .slick-arrow.slick-prev{ left: 0; }
+#product-view .pic-slider .slick-arrow.slick-next{ right: 0; }
+}
